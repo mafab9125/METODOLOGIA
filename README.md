@@ -15,10 +15,8 @@
 5. [Arquitectura general: dos componentes complementarios](#5-arquitectura-general-dos-componentes-complementarios)
 6. [Componente A: iniciativas en la web](#6-componente-a-iniciativas-en-la-web)
 7. [Componente B: evidencia científica](#7-componente-b-evidencia-científica)
-8. [Integración de A y B y productos](#8-integración-de-a-y-b-y-productos)
-9. [Uso de inteligencia artificial](#9-uso-de-inteligencia-artificial)
-10. [Limitaciones](#10-limitaciones)
-11. [Registro de cambios](#11-registro-de-cambios)
+8. [Uso de inteligencia artificial](#8-uso-de-inteligencia-artificial)
+9. [Limitaciones](#9-limitaciones)
 
 ---
 
