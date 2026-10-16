@@ -96,12 +96,7 @@ graph TD
 **Objetivo:** identificar, seleccionar y caracterizar las intervenciones, estrategias e iniciativas implementadas después de terremotos en
 los 15 países priorizados, mediante búsqueda en la web.
 
-### 6.1 Naturaleza del análisis
-
-El estudio es **descriptivo y se construye sobre valores observados**, no sobre modelos probabilísticos. La selección de países se
-justifica con el impacto realmente registrado de terremotos ocurridos entre 1990 y 2026, no con proyecciones de riesgo futuro.
-
-### 6.2 Hoja de ruta
+### 6.1 Hoja de ruta
 
 ```mermaid
 graph TD
@@ -141,7 +136,7 @@ graph TD
     D2 --> F_4[4. Políticas y Datos]:::foco
 ```
 
-### 6.3 Detalle operativo por fases
+### 6.2 Detalle operativo por fases
 
 #### Fase 1: Perfilamiento y priorización de países
 **Objetivo:** definir y justificar cuantitativamente una muestra (Top 15) de países a partir del **impacto sísmico observado** entre 1990
@@ -226,19 +221,10 @@ y 2026, para enfocar la búsqueda de iniciativas.
 
 **Objetivo:** identificar, seleccionar, evaluar y sintetizar la evidencia científica disponible en bases de datos bibliográficas sobre
 intervenciones, estrategias e iniciativas implementadas después de terremotos en los cuatro focos. La síntesis cubre sus efectos
-(beneficios, efectos negativos y costos), las barreras y los facilitadores de su implementación y su aplicabilidad al contexto colombiano.
+(beneficios, efectos negativos y costos), las barreras y los facilitadores de su implementación.
 
-### 7.1 Preguntas orientadoras (una por foco)
 
-1. ¿Qué intervenciones de salud mental y bienestar (humano y animal) se han implementado después de terremotos y qué se sabe de sus efectos
-   y de su implementación?
-2. ¿Qué estrategias de recuperación económica y empresarial se han implementado después de terremotos y qué se sabe de sus resultados?
-3. ¿Qué estrategias han permitido la continuidad educativa después de terremotos y qué intervenciones de educación en gestión del riesgo
-   han mostrado resultados?
-4. ¿Qué políticas públicas, arreglos institucionales y sistemas de datos se han usado para la recuperación y la preparación ante
-   terremotos, y qué se sabe de su desempeño?
-
-### 7.2 Hoja de ruta
+### 7.1 Hoja de ruta
 
 ```mermaid
 graph TD
@@ -267,7 +253,7 @@ graph TD
     B6 --> P3["Conteos tipo PRISMA y anexos"]:::producto
 ```
 
-### 7.3 Detalle operativo por fases
+### 7.2 Detalle operativo por fases
 
 #### Fase B1: Encuadre y criterios de elegibilidad
 **Objetivo:** fijar, antes de buscar, qué entra y qué no, para decidir registro por registro con criterios explícitos.
@@ -348,16 +334,6 @@ se procesa en una fase posterior.
   (`Verificado por`, que solo llena una persona); y observaciones. El campo «Anexo destino» se calcula a partir del tipo de estudio.
 * **Reglas de extracción:** lectura del documento completo; página exacta de cada dato; «No reportado» cuando la fuente no trae el dato;
   ningún dato que no esté en la fuente; las incoherencias de la fuente se reportan en «Incertidumbre» sin corregirlas.
-* **Evaluación de calidad según el diseño:**
-
-  | Diseño | Herramienta |
-  |---|---|
-  | Revisiones sistemáticas | AMSTAR 2 |
-  | Estudios primarios (cuasiexperimentales, transversales, cualitativos, entre otros) | Listas de verificación JBI |
-  | Hallazgos cualitativos sintetizados entre estudios | GRADE-CERQual, si aplica |
-
-  Cuando ninguna lista validada corresponde al diseño, se hace un juicio narrativo justificado. La calidad se escribe **dentro de cada
-  hallazgo** (tipo de estudio, calidad y año).
 
 #### Fase B6: Síntesis por foco
 **Objetivo:** convertir la evidencia extraída en insumos para la deliberación.
@@ -370,42 +346,9 @@ se procesa en una fase posterior.
 * **Anexos en formato UNED:** Anexo 1 (revisiones), Anexo 2 (estudios primarios, análisis de política y estudios de caso) y Anexo 3
   (reportes organizacionales).
 
-### 7.4 Estado del avance (MVP, corte al 25 de septiembre de 2026)
-
-| Paso | Resultado |
-|---|---|
-| Registros identificados en Scopus | 95 (0 duplicados) |
-| Tamizaje por título y resumen | 95 tamizados por ambos revisores · acuerdo global 78,9 % · κ = 0,47 (no alcanzó 0,8; se continuó como desviación declarada, con doble tamizaje completo) |
-| Decisión final | 69 Incluir · 12 Dudoso · 14 Excluir · **81 pasan a texto completo** |
-| Texto completo, primer grupo de países (Japón, México y Colombia) | 21 registros · 2 sin texto completo · 19 evaluados · 4 excluidos · **15 incluidos en la matriz de síntesis** |
-| Extracción | 15 fichas en la matriz; la verificación humana contra la fuente está en curso |
-| Pendiente | Texto completo de los 60 registros de otros países · síntesis · incorporación de las demás bases |
-
-Estas cifras corresponden a una sola base y a un grupo de países: **no son los conteos finales del proyecto**.
-
 ---
 
-## 8. Integración de A y B y productos
-
-| Sección del producto | Aporte del Componente A (web) | Aporte del Componente B (ciencia) |
-|---|---|---|
-| Problema y contexto | Priorización de países (Fase 1) | Magnitud de los efectos de los sismos |
-| Cada foco | Qué hicieron los países y cómo lo organizaron | Efectos, calidad de la evidencia e incertidumbre |
-| Consideraciones de implementación | Barreras, facilitadores, costos y actores reportados | Barreras y facilitadores de los estudios |
-| Aplicabilidad a Colombia | Similitud de contexto de los países | Proporción de estudios de Colombia y América Latina |
-
-**Productos:**
-
-- **Tabla comparativa país × foco** (Componente A), con una fila final de «iniciativas comunes entre países», complementada con un mapa de
-  brechas: número de iniciativas por país y foco, y cuántas tienen evaluación.
-- **Matriz de síntesis, tabla de hallazgos clave, tabla de barreras y facilitadores, conteos tipo PRISMA y anexos** (Componente B).
-- **Producto integrado,** según la necesidad de los decisores:
-  - **Síntesis rápida**, si se necesita una respuesta corta, con la tabla país × foco como eje.
-  - **Resumen de evidencia completo**, si se va a deliberar entre los cuatro focos.
-
-En ningún caso el producto emite recomendaciones.
-
-## 9. Uso de inteligencia artificial
+## 8. Uso de inteligencia artificial
 
 El uso de IA se declara conforme a la declaración conjunta de 2025 de Cochrane, Campbell, JBI y CEE sobre IA en síntesis de evidencia:
 
@@ -417,7 +360,7 @@ El uso de IA se declara conforme a la declaración conjunta de 2025 de Cochrane,
 - En el Componente A, la búsqueda por país puede apoyarse en herramientas automatizadas o de IA, con verificación humana de cada registro y
   reporte transparente de las etapas automatizadas.
 
-## 10. Limitaciones
+## 9. Limitaciones
 
 1. **Ventana de tiempo:** 1990–2026 para ambos componentes. Las iniciativas y los estudios anteriores a 1990 quedan fuera.
 2. **Solo terremotos:** algunos focos pueden quedar con poca o ninguna evidencia. Ese vacío se reporta como vacío; no se rellena con
@@ -430,11 +373,3 @@ El uso de IA se declara conforme a la declaración conjunta de 2025 de Cochrane,
    completo.
 7. **Criterio del Tipo A (Componente B):** se pierde la literatura que solo trata barreras o condiciones sin iniciativa.
 8. **Automatización:** las etapas apoyadas con IA se declaran y se verifican.
-
-## 11. Registro de cambios
-
-| Versión | Fecha | Cambio |
-|---|---|---|
-| 1.0 | — | Propuesta metodológica de la búsqueda de iniciativas en la web (Fases 1 a 4) |
-| 2.0 | 2026-09-25 | Se integra la metodología general del proyecto: propósito, marco, focos, definiciones, arquitectura de dos componentes, integración, uso de IA y limitaciones. La búsqueda web queda como **Componente A** y se agrega el **Componente B** (evidencia científica, Fases B1 a B6). En el Componente A se corrigen tres inconsistencias: «Top 10» pasa a «Top 15» y «5 países restantes» a «10 países restantes» (como ya decía el diagrama); «últimos 40 años» pasa a la ventana 1990–2026; y los canales de noticias locales pasan a ser solo pista hacia la fuente oficial |
-| 2.1 | 2026-10-16 (borrador) | Sección 1 renombrada «Propósito» y redactada de nuevo. Sección 2: cada marco con su nombre y su descripción. Sección 3 renombrada «Focos estratégicos», solo con el nombre de los cuatro focos; se retiran el alcance por foco y el eje temporal común, y con él sus menciones en el diagrama general y en la Fase B6 |
